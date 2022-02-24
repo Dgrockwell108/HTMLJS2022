@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <input type="text" id="name">
+    <script>
+    var textInput = document.querySelector('#name')
+    textInput.addEventListener('keyup', function (event) {
+        //the code reprenting the key you pressed
+        console.log(event.keycode)
+        console.log(textInput)
+        console.log(event.target)
+        event.target.value = "ha ha,  i just changed your typing"
+    })
+    </script>
+    
+    
+   <!--
+    <input type="button" id="submit" value="submit">
+    <script>
+        var button = document.querySelector('#submit')
+        button.addEventListener('click',alertHi)
+
+        function alertHi(e) {
+            console.log(e);
+            button.removeEventListener('click',alertHi)
+        }
+    </script>
+    -->
+    <!---
+    <script>
+        function add(_a, _b){
+            var sum = _a + _b
+            if(sum < 50)
+            {
+                let size = "small"
+                alert(size)
+            }
+            else
+            {
+                let size = "big"
+                alert(size)
+            }
+
+        }
+
+
+    add(10,10)
+    </script>
+    --->
+</body>
+</html>
